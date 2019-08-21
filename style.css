@@ -121,7 +121,7 @@ footer a{
 
 /*-------media queries-------*/
 
-@media(min-width: 700px){
+@media(min-width: 1000px){
     .grid{
         display:grid;
         grid-template-columns: repeat(6, 1fr);
