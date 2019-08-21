@@ -123,10 +123,34 @@ footer a{
 
 @media(min-width: 700px){
     .grid{
-        display: grid;
-        grid-template-columns: 1fr repeat(2, 200px) 1fr;
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
     }
-    .header-content{
-      grid-column: 2/4;  
+    
+    #header-content,
+    #s1 h2,
+    #s3 h2,
+    #s3 p{
+        grid-column: 2/6;
+    }
+    
+    #s1 p{
+        grid-column: 2/6;
+        columns: 2;
+    }
+    
+    #s4 article,
+    footer div{
+        grid-column: span 3;
+    }
+    
+    #s2 .col{
+        grid-column: span 2;
+    }
+    #s2 .col:first-child{
+        margin-right:20px;
+    }
+    #s2 .col:last-child{
+        margin-left:20px;
     }
 }
