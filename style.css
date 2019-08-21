@@ -1,0 +1,132 @@
+/*-----mobile first styling -----*/
+
+body{
+    margin: 0;
+    font-family: Verdana;
+    text-align: center;
+}
+
+p{
+    font-size:17px;
+    margin: 0;
+}
+
+header{
+    height:500px;
+}
+
+#header-content{
+    padding: 100px 30px;
+    color: #eee;
+}
+header p{
+    padding: 20px 0px;
+}
+
+header button{
+    background-color: #222;
+    color: #eee;
+    border: 1px solid gray;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: #222;
+}
+
+#header-bg{
+    position: absolute;
+    background: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+#s1{
+    background-color: #eee;
+    padding: 30px 15px;
+}
+
+#s1 h2{
+    padding-bottom: 30px;
+}
+
+#s2{
+    background-color: #222;
+    padding: 40px 20px 20px 20px;
+}
+
+.col{
+    background-color: #eee;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.col img{
+    width: 100%;
+}
+
+.col p{
+    padding: 20px;
+}
+
+#s3{
+    background-color: #fff;
+    padding: 50px 30px;
+}
+
+#s3 h2{
+    padding-bottom: 50px;
+}
+
+#s4 article{
+    padding: 50px 20px;    
+    color: #fff;
+}
+
+#s4 article:first-child{
+    background-color: #19e;
+}
+
+#s4 article h2{
+    padding: 20px 0px 50px;
+    margin:0;
+}
+
+#s4 article:last-child{
+    background-color: #222;
+}
+
+#s4 article:first-child p:last-child{
+    padding-top: 30px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #19e;
+}
+
+/*-------media queries-------*/
+
+@media(min-width: 700px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 200px) 1fr;
+    }
+    .header-content{
+      grid-column: 2/4;  
+    }
+}
